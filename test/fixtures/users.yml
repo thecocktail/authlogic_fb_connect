@@ -1,0 +1,7 @@
+yomismo:
+  persistence_token: 6cde0674657a8a313ce952df979de2830309aa4c11ca65805dd00bfdc65dbcc2f5e36718660a1d2e68c1a08c276d996763985d2f06fd3d076eb7bc4d97b1e317
+  perishable_token: <%= Authlogic::Random.friendly_token %>
+  email: cantorrodista@gmail.com
+  name: Alfredo Solano
+  nicename: alfredo-solano
+  facebook_id: 666
