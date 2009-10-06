@@ -41,9 +41,7 @@ module AuthlogicFbConnect
       end
       #Search user by his facebook_id in DB
       self.attempted_record ||= klass.find_by_facebook_id(controller.facebook_session.user.id) 
-      #If we dont find any user, let´s find by his hash_email
-      self.attempted_record ||= klass.find_by_fb_email_hash(controller.facebook_session.user.hash_email) if  self.attempted_record.blank?
-
+     
       if !attempted_record
         errors.add(:facebook_id, "no encontrado entre nuestros usuarios. Por favor, registrate con tu cuenta de Facebook.")
         return
